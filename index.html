@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>survey form</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p class="shift-p" id="description">Please fill this form correctly</p>
+  <form id="survey-form">
+    <fieldset>
+    
+   <label for="name" id="name-label" for="name">name <input required type="text" id="name" name="name" placeholder="Enter your name"></input></label> 
+
+  
+   <label for="email" id="email-label" for="email"> Email<input required id="email" name="email" type="email" placeholder="Enter your email"></input></label>
+
+    
+   <label for="age" id="number-label" for="age">Age<input type="number" id="number" name="age" placeholder="Age" min="13" max="120"></input> </label>
+<br>
+<label for="dropdown">How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="1">(select one)</option> 
+          
+            <option value="2">freeCodeCamp News</option>
+            <option value="3">freeCodeCamp YouTube Channel</option>
+       <option value="4">freeCodeCamp Forum</option>
+            <option value="5">Other</option> 
+          </select>
+        </label>
+        <br>
+        <p>Would you recommend freecodecamp to a friend</p>
+    <label for="maybe"><input id="maybe" type="radio" value="1" name="account-type" class="inline" /> maybe</label>
+
+        <label for="definetely"><input id="definetely" type="radio" value="2" name="account-type" class="inline" /> definetely</label>
+
+<label for="not-sure">
+<input id="not-sure" type="radio" value="3" name="account-type" class="inline" /> not sure</label>
+
+<label>
+<div id="checkbox">
+  <div class="flex-box">
+<input  type="checkbox" value="1">Front-end Projects</input>
+</div>
+<div class="flex-box">
+<input type="checkbox" value="2">
+Back-end Projects
+</input>
+</div>
+
+<div class="flex-box">
+<input type="checkbox" value="3">
+Data Visualization
+</input>
+</div>
+<div class="flex-box">
+<input type="checkbox" value="4">
+Challenges
+</input>
+</div>
+
+<div class="flex-box">
+<input type="checkbox" value="5">
+Open Source Community
+</input>
+</div>
+
+<div class="flex-box">
+<input type="checkbox" value="6">
+Gitter help rooms
+</input>
+</div>
+
+<div class="flex-box">
+<input type="checkbox" value="7">
+Videos
+</input>
+</div>
+
+<div class="flex-box">
+<input type="checkbox" value="8">
+City Meetups
+</input>
+</div>
+
+<div class="flex-box">
+<input type="checkbox" value="9">
+Wiki
+</input>
+</div>
+
+<div class="flex-box">
+<input type="checkbox" value="10">Forum</input>
+</div>
+
+<div class="flex-box">
+<input type="checkbox" value="11">Additional Courses </input>
+</div>
+</div>
+</label>
+<div>
+ <label for="bio">Any comments or suggestions?
+<textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+</div>
+  </fieldset>
+  <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
